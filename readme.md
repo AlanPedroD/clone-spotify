@@ -8,4 +8,4 @@
 <P>JavaScript</P>
 <img src="clone-spotify.gif" alt="imagem gif do projeto">
 
-### [Clique aqui para ver o projeto real](https://alanpedrod.github.io/clone-spotify/) 
+### [Clique aqui para ver o projeto real](https://alanpedrod.github.io/clone-spotify/) <!-- target="_blank" -->
