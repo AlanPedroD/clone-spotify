@@ -391,8 +391,8 @@ html{
 @media(max-width: 645px){
     .brasil-portugues{
         justify-content: flex-start;
-        /* padding-left: 16px; */
-        margin: 0px 0px 0px 30px;
+        padding-left: 15px;
+        /* margin: 0px 0px 0px 30px; */
     }
 }
 
@@ -425,8 +425,5 @@ html{
     .container-politica ul{
         flex-wrap: wrap;
         margin: 0px 0px 0px 0px;
-    }
-    #showcase{
-        margin-top: 199px;
     }
 }
