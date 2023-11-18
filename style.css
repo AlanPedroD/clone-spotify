@@ -426,4 +426,7 @@ html{
         flex-wrap: wrap;
         margin: 0px 0px 0px 0px;
     }
+    #showcase{
+        margin-top: 199px;
+    }
 }
