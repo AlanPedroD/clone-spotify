@@ -242,7 +242,7 @@ html{
 
 .brasil-portugues{
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     width: 60%;
     margin: 0 15px;
     font-size: 12px;
@@ -305,6 +305,13 @@ html{
     .brasil-portugues{
         width: 80%;
         max-width: 100%;
+    }
+}
+
+@media(max-width: 867px){
+    .navbar-items .navbar-item{
+        padding: 0 15px;
+        font-size: 14px;
     }
 }
 
@@ -381,7 +388,15 @@ html{
     }
 }
 
-@media(max-width: 538px){
+@media(max-width: 645px){
+    .brasil-portugues{
+        justify-content: flex-start;
+        /* padding-left: 16px; */
+        margin: 0px 0px 0px 30px;
+    }
+}
+
+@media(max-width: 591px){
     .navbar-items{
         flex-direction: column;
     }
@@ -391,6 +406,16 @@ html{
     .navbar-items .navbar-item{
         margin-bottom: 5px;
     }
+    #showcase{
+        margin-top: 190px;
+    }
+    .container-politica p{
+        margin: auto;
+    }
+}
+
+@media(max-width: 538px){
+
     #showcase #showcase-container h1{
         font-size: 44px;
     }
@@ -400,8 +425,5 @@ html{
     .container-politica ul{
         flex-wrap: wrap;
         margin: 0px 0px 0px 0px;
-    }
-    #showcase{
-        margin-top: 199px;
     }
 }
