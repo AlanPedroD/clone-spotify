@@ -476,6 +476,10 @@ html{
         display: flex;
     }
 
+    #navbar input:checked ~ .navbar-items a{
+        color: #fff;
+    }
+
     #navbar nav{
         position: absolute;
         top: 10px;
@@ -492,7 +496,7 @@ html{
     }
     .navbar-items .navbar-item{
         background-color: #4CAF50;
-        background-color: var(--corThemaLigth);
+        background-color: rgba(0,0,0,.60);
         margin-bottom: 15px;
         padding: 5px 10px;
         border-radius: 10px;
