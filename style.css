@@ -55,6 +55,7 @@ html{
     padding: 0px 15px;
 }
 
+
 .navbar-items{
     display: flex;
     justify-content: center;
@@ -77,6 +78,66 @@ html{
 .navbar-items .navbar-item a:hover{
     color: var(--corThemaDark);
 }
+
+#navbar .menu{
+    display: none;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+}
+
+#navbar nav label{
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar .hamburguer{
+    background-color: #fff;
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 2px;
+    top: 29px;
+    left: 15px;
+    transition: .5s ease-in-out;
+}
+
+#navbar .hamburguer::before,
+#navbar .hamburguer::after{
+    background-color: #fff;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: .2s ease-in-out;
+}
+
+#navbar .hamburguer::before{
+    top: -10px;
+}
+
+#navbar .hamburguer::after{
+    bottom: -10px;
+}
+
+#navbar input{
+    display: none;
+}
+
+#navbar input:checked ~ label .hamburguer{
+    transform: rotate(45deg);
+}
+
+#navbar input:checked ~ label .hamburguer::before{
+    transform: rotate(90deg);
+    top: 0;
+}
+#navbar input:checked ~ label .hamburguer::after{
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
 
 .btn{
     height: 40px;
@@ -396,18 +457,47 @@ html{
 }
 
 @media(max-width: 591px){
+
+    #navbar label{
+        display: flex;
+        justify-content: center;
+    }
+
+    #navbar .menu{
+        display: block;
+    }
     .navbar-items{
         flex-direction: column;
+        display: none;
+        padding: 15px;
     }
+
+    #navbar input:checked ~ .navbar-items{
+        display: flex;
+    }
+
+    #navbar nav{
+        position: absolute;
+        top: 10px;
+        right: 0;
+        z-index: 1;
+    }
+
+    #navbar nav .navbar-items{
+        margin-top: 10px;
+    }
+
     .navbar-items .navbar-item:nth-child(3){
         border-right: none;
     }
     .navbar-items .navbar-item{
-        margin-bottom: 5px;
+        background-color: #4CAF50;
+        background-color: var(--corThemaLigth);
+        margin-bottom: 15px;
+        padding: 5px 10px;
+        border-radius: 10px;
     }
-    #showcase{
-        margin-top: 188px;
-    }
+ 
     .container-politica p{
         margin: auto;
     }
