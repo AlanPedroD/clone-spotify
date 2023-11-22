@@ -6,6 +6,6 @@
 <p>HMTL</p>
 <P>CSS</P>
 <P>JavaScript</P>
-<img src="clone-spotify.gif" alt="imagem gif do projeto">
+<img src="clone-spotify-nv.gif" alt="imagem gif do projeto">
 
 ### [Clique aqui para ver o projeto real](https://alanpedrod.github.io/clone-spotify/) <!-- target="_blank" -->
