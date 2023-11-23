@@ -394,8 +394,9 @@ html{
         max-width: 100%;
         flex-wrap: wrap;
     }
-    .container-rodape .redes-sociais{
-        padding-left: 10px;
+    .rodape .redes-sociais a{
+        width: 44px;
+        height: 44px;
     }
     .container-rodape-02{
         width: 85%;
