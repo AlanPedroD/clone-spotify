@@ -269,12 +269,9 @@ html{
 }
 
 .rodape .redes-sociais{
-    margin-top: 20px;
+    margin-top: 15px;
     display: flex;
-}
-
-.rodape .redes-sociais li{
-    margin: 0px 15px 0px 0px;
+    gap: 15px;
 }
 
 .rodape .redes-sociais a{
@@ -307,6 +304,15 @@ html{
     width: 60%;
     margin: 0 15px;
     font-size: 12px;
+    align-items: center;
+}
+
+.brasil-portugues .container-imagem{
+    max-width: 28.6px;
+    margin-left: 10px;
+}
+.brasil-portugues .container-imagem img{
+    width: 100%;
 }
 
 .brasil-portugues a{
@@ -387,6 +393,9 @@ html{
         width: 85%;
         max-width: 100%;
         flex-wrap: wrap;
+    }
+    .container-rodape .redes-sociais{
+        padding-left: 10px;
     }
     .container-rodape-02{
         width: 85%;
